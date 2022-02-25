@@ -32,7 +32,7 @@ df['Submitted date']=pd.to_datetime(df['Submitted date']).dt.date               
 
 
 
-search = st.sidebar.date_input("Enter Start Date",datetime.date(2021, 7, 1))
+search = st.sidebar.date_input("Enter Start Date",datetime.date(2021, 1, 1))
 search0=pd.to_datetime(search)
 search=df.loc[(df['Start date']==search0)]
 
