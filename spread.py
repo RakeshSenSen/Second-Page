@@ -47,7 +47,7 @@ st.dataframe(df1)
 
 #st.write("Data as per the Start Date and End Date")
 btt=st.sidebar.button('DATA AS PER DATE')
-if btt is True:
+if btt is False:
     st.dataframe(df1)
 
 try:
