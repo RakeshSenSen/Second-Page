@@ -48,7 +48,7 @@ st.dataframe(df1)
 #st.write("Data as per the Start Date and End Date")
 btt=st.sidebar.button('DATA AS PER DATE')
 if btt:
-    st.dataframe(df1)
+    st.write(df1)
 
 try:
     tip1=st.sidebar.text_input("ENTER THE DEPARTMENT")
