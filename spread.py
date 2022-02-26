@@ -65,8 +65,8 @@ if tip1:
 
 try:
     tic=st.sidebar.text_input("ENTER THE TICKET NUMBER")
-    tic=tic.split(",")
-    dtf1=df['Ticket number'].isin(tic)
+    tif=tic.split(",")
+    dtf1=df['Ticket number'].isin(tif)
     dtf1=df[dtf1]
 except Exception as e:
     print(e)
