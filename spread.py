@@ -42,12 +42,12 @@ search1=df.loc[df['Start date']==search10]
 
 df1=df[df['Start date'].between(search0,search10)]
 
-st.write("Data as per the Start Date and End Date")
-st.dataframe(df1)
+
 
 #st.write("Data as per the Start Date and End Date")
 btt=st.sidebar.button('DATA AS PER DATE')
 if btt:
+    st.write("Data as per the Start Date and End Date")
     st.write(df1)
 
 try:
