@@ -71,7 +71,6 @@ try:
 except Exception as e:
     print(e)
 if tic:
-
     st.write("Data as per the Ticket Number")
     st.dataframe(dtf1)
 
