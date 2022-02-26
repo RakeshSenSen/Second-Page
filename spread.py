@@ -45,5 +45,33 @@ df1=df[df['Start date'].between(search0,search10)]
 st.write("Data as per the Start Date and End Date")
 st.dataframe(df1)
 
+#st.write("Data as per the Start Date and End Date")
+btt=st.sidebar.button('DATA AS PER DATE')
+if btt:
+    st.dataframe(df1)
 
+try:
+    tip1=st.sidebar.text_input("ENTER THE DEPARTMENT")
+    tip=tip1.split(",")
+    dtf=df1['Departments'].isin(tip)
+    dtf=df1[dtf]
+    
+
+except Exception as e:
+    print(e)
+if tip1:
+    st.write("Data as per the Departments")
+    st.dataframe(dtf)
+
+try:
+    tic=st.sidebar.text_input("ENTER THE TICKET NUMBER")
+    tic=tic.split(",")
+    dtf1=df['Ticket number'].isin(tic)
+    dtf1=df[dtf1]
+except Exception as e:
+    print(e)
+if tic:
+
+    st.write("Data as per the Ticket Number")
+    st.dataframe(dtf1)
 
