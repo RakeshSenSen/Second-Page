@@ -22,8 +22,8 @@ with  col3:
      st.set_option('deprecation.showPyplotGlobalUse', False)                          #image projection
      st.image(i,use_column_width=None)
 
-idd='1jx3pR8tohqSRc_fPHLbgM8DcaNrAdQNa8tpxosdDezo'
-idd1=st.sidebar.text_input("ENTER THE Sheet ID",)
+#idd='1jx3pR8tohqSRc_fPHLbgM8DcaNrAdQNa8tpxosdDezo'
+idd1=st.sidebar.text_input("ENTER THE Sheet ID",'1jx3pR8tohqSRc_fPHLbgM8DcaNrAdQNa8tpxosdDezo')
 df=pd.read_csv(f"https://docs.google.com/spreadsheets/d/{idd1}/export?format=csv")
 #st.write('''Hello''')
 #st.dataframe(df)
